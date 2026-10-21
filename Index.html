@@ -6,36 +6,129 @@
     <title>Mi primera app como desarrollador ADSO</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <div class="tarjeta">
 
-        <header class ="encabezado">
+        <header class="encabezado">
             <div class="icono">&lt;/&gt;</div>
 
             <h1>Gregorio Palma</h1>
 
-            <p class="profesion"> programador de sofware</p>
-            <p class="cargo">ingeniero en pagina web</p>
+            <p class="profesion">Programador de software</p>
+            <p class="cargo">Ingeniero en página web</p>
         </header>
 
-        <section class="presentacion"
-        <h2>¡bienvenido a mi espacio digital</h2>
 
-        <p>
-             tengo 20 años, soy programador de sofware.
-            este es mi primer proyecto en github y estoy
-            aprendiendo a desarrollar aplicacion web.
-        <p>
-    </section>
+        <section class="presentacion">
+            <h2>¡Bienvenido a mi espacio digital!</h2>
 
-    <section class="habilidades">
-        <h2>mis areas de interes</h2>
-
-        <ul>
-            <li>Desarrollo web</li>
-            <li>programador de sofware</li>
-            <li>diseñador en base de datos</li>
-        </ul>
+            <p>
+                Tengo 20 años, soy programador de software.
+                Este es mi primer proyecto en GitHub y estoy
+                aprendiendo a desarrollar aplicaciones web.
+            </p>
         </section>
-        
+
+
+        <section class="habilidades">
+            <h2>Mis áreas de interés</h2>
+
+            <ul>
+                <li>Desarrollo web</li>
+                <li>Programación de software</li>
+                <li>Diseño de bases de datos</li>
+            </ul>
+        </section>
+
+
+        <section class="contacto">
+            <h2>Formulario de contacto</h2>
+
+            <p class="texto-contacto">
+                ¿Tienes una pregunta o una propuesta?
+                Completa el siguiente formulario.
+            </p>
+
+
+            <form id="formularioContacto">
+
+                <div class="campo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Gregorio Palma"
+                        required
+                        minlength="3">
+                </div>
+
+
+                <div class="campo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="palmarafael303@gmail.com"
+                        required>
+                </div>
+
+
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Proyecto">Propuesta de proyecto</option>
+                        <option value="Formacion">Formación</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+
+                <div class="campo">
+                    <label for="mensajeContacto">Mensaje</label>
+
+                    <textarea
+                        id="mensajeContacto"
+                        name="mensaje"
+                        placeholder="Escribe tu mensaje..."
+                        required
+                        minlength="10"></textarea>
+                </div>
+
+
+                <button type="submit" class="boton-enviar">
+                    Enviar mensaje
+                </button>
+
+                <p
+                    id="respuestaFormulario"
+                    class="respuesta-formulario"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+        </section>
+
+
+        <section class="contacto-extra">
+
+            <button id="boton">Haz clic aquí</button>
+
+            <p id="mensaje"></p>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

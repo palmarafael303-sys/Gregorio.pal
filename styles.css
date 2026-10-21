@@ -1,15 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: #f0f4f8;
-    text-align: center;
-    padding: 50px;
+    background: linear-gradient(135deg, #000000, #700000);
+    color: white;
+    min-height: 100vh;
+    padding: 40px 20px;
 }
-h1 { color: #2563eb; }
-button {
-    padding: 12px 20px;
-    background: #2563eb;
+
+.tarjeta {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px;
+    background-color: #111111;
+    border: 1px solid #990000;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.25);
+}
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    text-align: center;
+}
+
+.icono {
+    color: #ff3333;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #ff3333;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.profesion,
+.cargo {
+    margin: 8px 0;
+}
+
+
+/* TÍTULOS */
+
+h2 {
+    color: #ff3333;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+
+/* PRESENTACIÓN */
+
+.presentacion {
+    text-align: center;
+}
+
+.presentacion p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* HABILIDADES */
+
+.habilidades ul {
+    list-style: none;
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+.habilidades li {
+    background-color: #181818;
+    border: 1px solid #990000;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.habilidades li:hover {
+    background-color: #990000;
+}
+
+
+/* FORMULARIO */
+
+.contacto {
+    max-width: 600px;
+    margin: auto;
+}
+
+.texto-contacto {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* CADA CAMPO */
+
+.campo {
+    margin-bottom: 22px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: white;
+}
+
+
+/* INPUTS */
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #181818;
+    color: white;
+    border: 1px solid #990000;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+
+/* MENSAJE GRANDE */
+
+.campo textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+
+/* CUANDO SE SELECCIONA UN CAMPO */
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+}
+
+
+/* BOTÓN */
+
+.boton-enviar {
+    display: block;
+    margin: 25px auto 0;
+    background-color: #ff0000;
     color: white;
     border: none;
+    padding: 14px 30px;
     border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #990000;
+}
+
+
+/* MENSAJE DE RESPUESTA */
+
+.respuesta-formulario {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* SEGUNDO BOTÓN */
+
+.contacto-extra {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contacto-extra button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contacto-extra button:hover {
+    background-color: #990000;
+}
+
+#mensaje {
+    margin-top: 15px;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .tarjeta {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .contacto {
+        width: 100%;
+    }
 }
